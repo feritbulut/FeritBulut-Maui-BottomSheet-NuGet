@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FeritBulut.Maui.BottomSheet</id>
+    <version>1.0.0</version>
+    <authors>Ferit Bulut</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/feritbulut/FeritBulut.Maui.BottomSheet</projectUrl>
+    <description>A professional, customizable Bottom Sheet control for .NET MAUI. Draggable, animated, and fully customizable.</description>
+    <tags>maui bottomsheet bottom-sheet control ui mobile dotnet csharp</tags>
+    <repository type="git" url="https://github.com/feritbulut/FeritBulut.Maui.BottomSheet" />
+    <dependencies>
+      <group targetFramework="net9.0-android35.0" />
+      <group targetFramework="net9.0-ios18.0" />
+      <group targetFramework="net9.0-maccatalyst18.0" />
+      <group targetFramework="net9.0-windows10.0.19041" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-android\FeritBulut.Maui.BottomSheet.dll" target="lib\net9.0-android35.0\FeritBulut.Maui.BottomSheet.dll" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-android\FeritBulut.Maui.BottomSheet.xml" target="lib\net9.0-android35.0\FeritBulut.Maui.BottomSheet.xml" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-ios\FeritBulut.Maui.BottomSheet.dll" target="lib\net9.0-ios18.0\FeritBulut.Maui.BottomSheet.dll" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-ios\FeritBulut.Maui.BottomSheet.xml" target="lib\net9.0-ios18.0\FeritBulut.Maui.BottomSheet.xml" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-maccatalyst\FeritBulut.Maui.BottomSheet.dll" target="lib\net9.0-maccatalyst18.0\FeritBulut.Maui.BottomSheet.dll" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-maccatalyst\FeritBulut.Maui.BottomSheet.xml" target="lib\net9.0-maccatalyst18.0\FeritBulut.Maui.BottomSheet.xml" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.dll" target="lib\net9.0-windows10.0.19041\FeritBulut.Maui.BottomSheet.dll" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.xml" target="lib\net9.0-windows10.0.19041\FeritBulut.Maui.BottomSheet.xml" />
+    <file src="C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\README.md" target="README.md" />
+  </files>
+</package>

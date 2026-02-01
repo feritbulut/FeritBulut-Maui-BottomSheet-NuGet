@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FeritBulut.Maui.BottomSheet</name>
+    </assembly>
+    <members>
+        <member name="T:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView">
+            <summary>
+            Professional, fully featured Bottom Sheet check.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.StateChanged">
+            <summary>
+            It is triggered when the situation changes.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Dragging">
+            <summary>
+            It is triggered during dragging.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.DragStarted">
+            <summary>
+            It is triggered when dragging begins.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.DragEnded">
+            <summary>
+            It is triggered when the dragging is finished.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.SnapPointReached">
+            <summary>
+            It is triggered when the snap point is reached.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Opened">
+            <summary>
+            It is triggered when the sheet is fully opened.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Closed">
+            <summary>
+            It is triggered when the sheet is completely closed.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.PeekContentTapped">
+            <summary>
+            Peek is triggered when its content is clicked.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Show(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            Sets the Bottom Sheet to the specified state.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Hide">
+            <summary>
+            Closes the bottom sheet.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Toggle(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            Opens/closes the Bottom Sheet.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.AnimateToPosition(System.Double)">
+            <summary>
+            It creates an animated transition to the specified ratio value.
+            </summary>
+            <param name="ratio">Ratio between 0 and 1</param>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToTopAsync">
+            <summary>
+            The content scrolls to the top.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToBottomAsync">
+            <summary>
+            The content scrolls to the bottom.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToElementAsync(Microsoft.Maui.Controls.Element,Microsoft.Maui.Controls.ScrollToPosition)">
+            <summary>
+            Scrolls to the specified element.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.LockGesture">
+            <summary>
+            Temporarily locks the drag.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.UnlockGesture">
+            <summary>
+            Unlocks drag lock
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.AddSnapPoint(System.Double)">
+            <summary>
+            Snap point adders
+            </summary>
+            <param name="ratio">Ratio between 0 and 1</param>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ClearSnapPoints">
+            <summary>
+            Clears all snap points.
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState">
+            <summary>
+            Defines the opening states of the Bottom Sheet.
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Hidden">
+            <summary>
+            Bottom Sheet is completely covered (invisible)
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Collapsed">
+            <summary>
+            The bottom sheet is minimally open (only the handle is visible or a small portion of it).
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.HalfExpanded">
+            <summary>
+            Bottom Sheet is semi-open (approximately half the screen)
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Expanded">
+            <summary>
+            Bottom Sheet fully open (covers most of the screen)
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.GestureDirection">
+            <summary>
+            Specifies the drag direction.
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.Up">
+            <summary>
+            Drag upwards
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.Down">
+            <summary>
+            Drag downwards
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.None">
+            <summary>
+            No movement
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode">
+            <summary>
+            Drag lock modes
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.None">
+            <summary>
+            No lock, can be freely dragged.
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.LockDown">
+            <summary>
+            It can only be dragged upwards.
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.LockUp">
+            <summary>
+            It can only be dragged down.
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.Locked">
+            <summary>
+            Fully locked, no dragging allowed.
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs">
+            <summary>
+            Arguments for drag events
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.TranslationY">
+            <summary>
+            Current Y position
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.Direction">
+            <summary>
+            Drag direction
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.Velocity">
+            <summary>
+            Drag speed (velocity)
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.CurrentRatio">
+            <summary>
+            Current height ratio (0-1)
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs">
+            <summary>
+            Arguments for the event triggered when the snap point is reached.
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs.SnapPoint">
+            <summary>
+            The reached snap point value
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs.SnapPointIndex">
+            <summary>
+            Index of the snap point
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs">
+            <summary>
+            Arguments for the event triggered when the Bottom Sheet state changes.
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.OldState">
+            <summary>
+            Previous situation
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.NewState">
+            <summary>
+            The new (current) situation
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.#ctor(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState,FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            StateChangedEventArgs constructor
+            </summary>
+            <param name="oldState">Previous situation</param>
+            <param name="newState">Next situation</param>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Extensions.BottomSheetExtensions">
+            <summary>
+            Extension methods for adding the Bottom Sheet library to the application.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Extensions.BottomSheetExtensions.UseBottomSheet(Microsoft.Maui.Hosting.MauiAppBuilder)">
+            <summary>
+            Adds Bottom Sheet controls to the application.
+            </summary>
+            <param name="builder">MauiAppBuilder instance</param>
+            <returns>MauiAppBuilder</returns>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper">
+            <summary>
+            Manages keyboard events.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.KeyboardShown">
+            <summary>
+            It is triggered when the keyboard appears.
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.KeyboardHidden">
+            <summary>
+            It is triggered when the keyboard is hidden.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.Initialize">
+            <summary>
+            The keyboard initializes the helper.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.GetKeyboardHeight">
+            <summary>
+            Returns the current keyboard height.
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection">
+            <summary>
+            Collection that manages Snap points
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindNearest(System.Double)">
+            <summary>
+            It finds the snap point closest to the given value.
+            </summary>
+            <param name="value">Current value (ratio between 0-1)</param>
+            <returns>The nearest snapshot point</returns>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindNext(System.Double)">
+            <summary>
+            It finds the snap point one level above the given value.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindPrevious(System.Double)">
+            <summary>
+            It finds the snap point one level below the given value.
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.IndexOfNearest(System.Double)">
+            <summary>
+            Finds the index of the snap point.
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

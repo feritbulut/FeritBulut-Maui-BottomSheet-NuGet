@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:bottom="clr-namespace:FeritBulut.Maui.BottomSheet.Controls;assembly=FeritBulut.Maui.BottomSheet"
+             x:Class="BottomSheetDemo.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <Grid>
+        <!-- ===== HOME PAGE CONTENT ===== -->
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+
+                <!-- Title -->
+                <Frame BackgroundColor="#6200EE" 
+                       CornerRadius="15" 
+                       Padding="20"
+                       HasShadow="True">
+                    <StackLayout>
+                        <Label Text="FeritBulut.Maui.BottomSheet"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Professional Bottom Sheet Library"
+                               FontSize="14"
+                               TextColor="#E0E0E0"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Key Features -->
+                <Label Text="Basic Use" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Button Text="Collapsed (Small)"
+                                Clicked="OnCollapsedClicked"
+                                BackgroundColor="#FF9800"
+                                TextColor="White"
+                                CornerRadius="8"/>
+
+                        <Button Text="Half Expanded (Half)"
+                                Clicked="OnHalfExpandedClicked"
+                                BackgroundColor="#4CAF50"
+                                TextColor="White"
+                                CornerRadius="8"/>
+
+                        <Button Text="Expanded (Full)"
+                                Clicked="OnExpandedClicked"
+                                BackgroundColor="#2196F3"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Peek Content -->
+                <Label Text="Peek Content (Spotify)" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Mini content that appears even when closed."
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="Music Player Bottom Sheet"
+                                Clicked="OnMusicPlayerClicked"
+                                BackgroundColor="#1DB954"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Header + Scroll -->
+                <Label Text="Fixed Header + Scrolling Content" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="The header remains fixed, but the content scrolls."
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="List Bottom Sheet"
+                                Clicked="OnListBottomSheetClicked"
+                                BackgroundColor="#9C27B0"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Snap Points -->
+                <Label Text="Custom Snap Points" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Special stopping points: %20, %40, %60, %80"
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="Snap Points Demo"
+                                Clicked="OnSnapPointsClicked"
+                                BackgroundColor="#FF5722"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Form & Keyboard -->
+                <Label Text="Keyboard Compatible Form" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="It automatically rises when the keyboard is turned on."
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="Form Bottom Sheet"
+                                Clicked="OnFormBottomSheetClicked"
+                                BackgroundColor="#00BCD4"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Gesture Lock -->
+                <Label Text="Gesture Lock" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Drag lockable"
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="Locking Bottom Sheet"
+                                Clicked="OnLockedBottomSheetClicked"
+                                BackgroundColor="#795548"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Custom Design -->
+                <Label Text="Custom Design" 
+                       FontSize="18" 
+                       FontAttributes="Bold"
+                       Margin="0,10,0,5"/>
+
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="15" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Different colors, corners, effects"
+                               FontSize="13"
+                               TextColor="#666"/>
+                        <Button Text="Colored Bottom Sheet"
+                                Clicked="OnColorfulBottomSheetClicked"
+                                BackgroundColor="#E91E63"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Space -->
+                <BoxView HeightRequest="100" Color="Transparent"/>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- ===== BOTTOM SHEET 1: Basic ===== -->
+        <bottom:BottomSheetView 
+            x:Name="basicBottomSheet"
+            SheetBackgroundColor="White"
+            CornerRadius="28"
+            HandleColor="#CCCCCC"
+            OverlayColor="#99000000"
+            CloseOnOverlayTap="True"
+            IsDraggable="True"
+            EnableBounceEffect="True"
+            AnimationDuration="300"
+            HasShadow="False"
+            CollapsedRatio="0.15"
+            HalfExpandedRatio="0.5"
+            ExpandedRatio="0.9"
+            StateChanged="OnBottomSheetStateChanged">
+
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="20" Spacing="15">
+
+                    <Label Text="Basic Bottom Sheet"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="This is a professional Bottom Sheet example. You can control it by dragging it up/down."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#666666"/>
+
+                    <BoxView HeightRequest="1" Color="#E0E0E0" Margin="0,10"/>
+
+                    <Label Text="✨Features:" FontSize="16" FontAttributes="Bold"/>
+
+                    <Label Text="✅ Draggable" FontSize="14"/>
+                    <Label Text="✅ Bounce efect" FontSize="14"/>
+                    <Label Text="✅ Animated transitions" FontSize="14"/>
+                    <Label Text="✅ Overlay support" FontSize="14"/>
+                    <Label Text="✅ 3 different opening levels" FontSize="14"/>
+
+                    <BoxView HeightRequest="1" Color="#E0E0E0" Margin="0,10"/>
+
+                    <Label x:Name="stateLabel" 
+                           Text="State: Hidden"
+                           FontSize="14"
+                           TextColor="#6200EE"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Button Text="Close"
+                            Clicked="OnCloseBasicClicked"
+                            BackgroundColor="#FF5252"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 2: Music Player (Peek Content) ===== -->
+        <bottom:BottomSheetView 
+            x:Name="musicBottomSheet"
+            SheetBackgroundColor="#1E1E1E"
+            CornerRadius="24"
+            HandleColor="#666666"
+            OverlayColor="#CC000000"
+            CloseOnOverlayTap="True"
+            IsDraggable="True"
+            EnableBounceEffect="True"
+            AnimationDuration="350"
+            HasShadow="False"
+            CollapsedRatio="0.22"
+            HalfExpandedRatio="0.55"
+            ExpandedRatio="0.92"
+            PeekHeight="150"
+            PeekContentTapped="OnPeekContentTapped">
+
+            <!-- Peek Content - Visible when closed -->
+            <bottom:BottomSheetView.PeekContent>
+                <Grid Padding="15,5" ColumnDefinitions="50,*,40,40" RowDefinitions="60">
+                    <Frame Grid.Column="0" 
+                           CornerRadius="8" 
+                           Padding="0" 
+                           HasShadow="False"
+                           BackgroundColor="#333">
+                        <Label Text="🎵" 
+                               FontSize="24" 
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" Margin="10,0">
+                        <Label Text="Song Title" 
+                               FontSize="14" 
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Label Text="Artist Name" 
+                               FontSize="12" 
+                               TextColor="#AAAAAA"/>
+                    </StackLayout>
+
+                    <Label Grid.Column="2" 
+                           Text="⏸️" 
+                           FontSize="24" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center"/>
+
+                    <Label Grid.Column="3" 
+                           Text="⏭️" 
+                           FontSize="24" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center"/>
+                </Grid>
+            </bottom:BottomSheetView.PeekContent>
+
+            <!-- Full Content -->
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="20" Spacing="20">
+
+                    <!-- Album Cover -->
+                    <Frame CornerRadius="20" 
+                           Padding="0" 
+                           HasShadow="False"
+                           BackgroundColor="#333"
+                           HeightRequest="250"
+                           WidthRequest="250"
+                           HorizontalOptions="Center">
+                        <Label Text="🎵" 
+                               FontSize="80" 
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- Song Information -->
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="Great Song Title"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Magnificent Artist"
+                               FontSize="16"
+                               TextColor="#AAAAAA"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Progress Bar -->
+                    <StackLayout Margin="0,10">
+                        <Slider Value="0.4" 
+                                MinimumTrackColor="#1DB954" 
+                                MaximumTrackColor="#444"/>
+                        <Grid>
+                            <Label Text="1:24" FontSize="12" TextColor="#AAA" HorizontalOptions="Start"/>
+                            <Label Text="3:45" FontSize="12" TextColor="#AAA" HorizontalOptions="End"/>
+                        </Grid>
+                    </StackLayout>
+
+                    <!-- Controls -->
+                    <Grid ColumnDefinitions="*,*,*,*,*" HorizontalOptions="Center" WidthRequest="300">
+                        <Label Grid.Column="0" Text="🔀" FontSize="28" HorizontalOptions="Center" TextColor="#AAA"/>
+                        <Label Grid.Column="1" Text="⏮️" FontSize="32" HorizontalOptions="Center" TextColor="White"/>
+                        <Frame Grid.Column="2" 
+                               BackgroundColor="#1DB954" 
+                               CornerRadius="30" 
+                               Padding="15"
+                               HasShadow="False">
+                            <Label Text="▶️" FontSize="28" HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label Grid.Column="3" Text="⏭️" FontSize="32" HorizontalOptions="Center" TextColor="White"/>
+                        <Label Grid.Column="4" Text="🔁" FontSize="28" HorizontalOptions="Center" TextColor="#AAA"/>
+                    </Grid>
+
+                    <!-- Volume -->
+                    <Grid ColumnDefinitions="30,*,30" Margin="0,20,0,0">
+                        <Label Grid.Column="0" Text="🔈" FontSize="18" TextColor="#AAA"/>
+                        <Slider Grid.Column="1" Value="0.7" MinimumTrackColor="#1DB954" MaximumTrackColor="#444"/>
+                        <Label Grid.Column="2" Text="🔊" FontSize="18" TextColor="#AAA"/>
+                    </Grid>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 3: List (Header + Scroll) ===== -->
+        <bottom:BottomSheetView 
+            x:Name="listBottomSheet"
+            SheetBackgroundColor="White"
+            CornerRadius="24"
+            HandleColor="#CCCCCC"
+            CloseOnOverlayTap="True"
+            IsDraggable="True"
+            EnableBounceEffect="True"
+            EnableContentScroll="True"
+            HalfExpandedRatio="0.6"
+            HasShadow="False"
+            ExpandedRatio="0.92">
+
+            <!-- Header Content - It remains constant. -->
+            <bottom:BottomSheetView.HeaderContent>
+                <StackLayout BackgroundColor="#6200EE" Padding="20">
+                    <Label Text="📋 To-Do List"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                    <Label Text="12 görev • 5 tamamlandı"
+                           FontSize="13"
+                           TextColor="#E0E0E0"/>
+                </StackLayout>
+            </bottom:BottomSheetView.HeaderContent>
+
+            <!-- Scrollable Content -->
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="15" Spacing="10">
+
+                    <!-- List Items -->
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="✅" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Complete the project" TextDecorations="Strikethrough" TextColor="#999"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="✅" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Write documentation" TextDecorations="Strikethrough" TextColor="#999"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Create test scenarios."/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Release a NuGet package"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Update GitHub README"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Shoot a demo video"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Write a blog post"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Share on social media"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Gather feedback."/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="#F5F5F5" CornerRadius="10" Padding="15">
+                        <Grid ColumnDefinitions="30,*">
+                            <Label Text="⬜" FontSize="18"/>
+                            <Label Grid.Column="1" Text="Version 2.0 is planned."/>
+                        </Grid>
+                    </Frame>
+
+                    <Button Text="+ Add New Task"
+                            BackgroundColor="#6200EE"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Margin="0,10"/>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 4: Snap Points ===== -->
+        <bottom:BottomSheetView 
+            x:Name="snapPointsBottomSheet"
+            SheetBackgroundColor="#FFF3E0"
+            CornerRadius="24"
+            HandleColor="#FF5722"
+            CloseOnOverlayTap="True"
+            IsDraggable="True"
+            HasShadow="False"
+            EnableBounceEffect="True"
+            UseSnapPoints="True"
+            SnapPointReached="OnSnapPointReached">
+
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="20" Spacing="15">
+
+                    <Label Text="📍 Custom Snap Points"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="This Bottom Sheet uses special snap points. When you drag and drop, it snaps to the nearest point."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#666"/>
+
+                    <BoxView HeightRequest="1" Color="#FFCCBC" Margin="0,10"/>
+
+                    <Label Text="Snap Points:" FontSize="16" FontAttributes="Bold"/>
+
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="40,40">
+                        <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#FF5722" CornerRadius="8" Padding="10">
+                            <Label Text="20%" TextColor="White" HorizontalOptions="Center"/>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#FF7043" CornerRadius="8" Padding="10">
+                            <Label Text="40%" TextColor="White" HorizontalOptions="Center"/>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#FF8A65" CornerRadius="8" Padding="10">
+                            <Label Text="60%" TextColor="White" HorizontalOptions="Center"/>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#FFAB91" CornerRadius="8" Padding="10">
+                            <Label Text="80%" TextColor="White" HorizontalOptions="Center"/>
+                        </Frame>
+                    </Grid>
+
+                    <Label x:Name="snapPointLabel"
+                           Text=":Available -"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#FF5722"
+                           HorizontalOptions="Center"
+                           Margin="0,10"/>
+
+                    <Button Text="Close"
+                            Clicked="OnCloseSnapPointsClicked"
+                            BackgroundColor="#FF5722"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 5: Form (Keyboard Aware) ===== -->
+        <bottom:BottomSheetView 
+            x:Name="formBottomSheet"
+            SheetBackgroundColor="White"
+            CornerRadius="24"
+            HandleColor="#00BCD4"
+            CloseOnOverlayTap="False"
+            IsDraggable="True"
+            HasShadow="False"
+            IsKeyboardAware="True"
+            HalfExpandedRatio="0.6"
+            ExpandedRatio="0.95">
+
+            <bottom:BottomSheetView.HeaderContent>
+                <StackLayout BackgroundColor="#00BCD4" Padding="20">
+                    <Label Text="📋 Contact Form"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                </StackLayout>
+            </bottom:BottomSheetView.HeaderContent>
+
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="20" Spacing="15">
+
+                    <Label Text="Name Surname" FontSize="14" FontAttributes="Bold"/>
+                    <Entry Placeholder="Enter your name..." 
+                           BackgroundColor="#F5F5F5"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="Email" FontSize="14" FontAttributes="Bold"/>
+                    <Entry Placeholder="email@example.com" 
+                           Keyboard="Email"
+                           BackgroundColor="#F5F5F5"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="Phone" FontSize="14" FontAttributes="Bold"/>
+                    <Entry Placeholder="+90 5xx xxx xx xx" 
+                           Keyboard="Telephone"
+                           BackgroundColor="#F5F5F5"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="Your message" FontSize="14" FontAttributes="Bold"/>
+                    <Editor Placeholder="Write your message...."
+                            HeightRequest="100"
+                            BackgroundColor="#F5F5F5"
+                            Margin="0,0,0,10"/>
+
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                        <Button Grid.Column="0"
+                                Text="Cancel"
+                                Clicked="OnCloseFormClicked"
+                                BackgroundColor="#EEEEEE"
+                                TextColor="#333"
+                                CornerRadius="10"/>
+                        <Button Grid.Column="1"
+                                Text="Send"
+                                BackgroundColor="#00BCD4"
+                                TextColor="White"
+                                CornerRadius="10"/>
+                    </Grid>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 6: Locked ===== -->
+        <bottom:BottomSheetView 
+            x:Name="lockedBottomSheet"
+            SheetBackgroundColor="#EFEBE9"
+            CornerRadius="24"
+            HasShadow="False"
+            HandleColor="#795548"
+            CloseOnOverlayTap="False"
+            IsDraggable="True"
+            HalfExpandedRatio="0.5">
+
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="20" Spacing="15">
+
+                    <Label Text="🔒 Gesture Lock Demo"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="You can lock or unlock the dragging of this Bottom Sheet."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#666"/>
+
+                    <BoxView HeightRequest="1" Color="#D7CCC8" Margin="0,10"/>
+
+                    <Label x:Name="lockStatusLabel"
+                           Text="State: 🔓 Opened"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#795548"
+                           HorizontalOptions="Center"/>
+
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="10" Margin="0,10">
+                        <Button Grid.Column="0"
+                                Text="🔒 Locked"
+                                Clicked="OnLockClicked"
+                                BackgroundColor="#795548"
+                                TextColor="White"
+                                CornerRadius="10"/>
+                        <Button Grid.Column="1"
+                                Text="🔓 Open"
+                                Clicked="OnUnlockClicked"
+                                BackgroundColor="#A1887F"
+                                TextColor="White"
+                                CornerRadius="10"/>
+                    </Grid>
+
+                    <Button Text="Just Drag Down"
+                            Clicked="OnLockUpClicked"
+                            BackgroundColor="#8D6E63"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+                    <Button Text="Just Drag Up"
+                            Clicked="OnLockDownClicked"
+                            BackgroundColor="#6D4C41"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+                    <Button Text="Close"
+                            Clicked="OnCloseLockedClicked"
+                            BackgroundColor="#4E342E"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Margin="0,10"/>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+        <!-- ===== BOTTOM SHEET 7: Colorful ===== -->
+        <bottom:BottomSheetView 
+            x:Name="colorfulBottomSheet"
+            SheetBackgroundColor="#667eea"
+            CornerRadius="32"
+            HandleColor="#FFFFFF"
+            OverlayColor="#AA000000"
+            CloseOnOverlayTap="True"
+            IsDraggable="True"
+            EnableBounceEffect="True"
+            BounceDistance="40"
+            AnimationDuration="400"
+            HasShadow="False">
+
+            <bottom:BottomSheetView.SheetContent>
+                <StackLayout Padding="25" Spacing="20">
+
+                    <Label Text="🌈 Colored Bottom Sheet"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Gradient background, unique rounded edges, powerful bounce effect!"
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#E0E0FF"/>
+
+                    <BoxView HeightRequest="2" Color="#9FA8DA" CornerRadius="1" Margin="20,10"/>
+
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="15" RowDefinitions="80,80">
+                        <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#FF6B6B" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="❤️" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Like" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#4ECDC4" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="💬" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Comment" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="2" BackgroundColor="#FFE66D" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="⭐" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Favorite" FontSize="11" TextColor="#333" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#A29BFE" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="🔗" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Share" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#FD79A8" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="📥" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Save" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="2" BackgroundColor="#00B894" CornerRadius="15" Padding="10">
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                <Label Text="📤" FontSize="24" HorizontalOptions="Center"/>
+                                <Label Text="Submit" FontSize="11" TextColor="White" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+
+                    <Button Text="✨ Great!"
+                            Clicked="OnCloseColorfulClicked"
+                            BackgroundColor="White"
+                            TextColor="#667eea"
+                            CornerRadius="15"
+                            FontAttributes="Bold"
+                            Margin="0,10"/>
+
+                </StackLayout>
+            </bottom:BottomSheetView.SheetContent>
+
+        </bottom:BottomSheetView>
+
+    </Grid>
+
+</ContentPage>

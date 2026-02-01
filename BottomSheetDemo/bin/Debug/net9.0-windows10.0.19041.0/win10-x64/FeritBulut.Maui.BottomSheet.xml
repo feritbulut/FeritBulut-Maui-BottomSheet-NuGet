@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FeritBulut.Maui.BottomSheet</name>
+    </assembly>
+    <members>
+        <member name="T:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView">
+            <summary>
+            Profesyonel, tam özellikli Bottom Sheet kontrolü
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.StateChanged">
+            <summary>
+            Durum değiştiğinde tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Dragging">
+            <summary>
+            Sürükleme sırasında tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.DragStarted">
+            <summary>
+            Sürükleme başladığında tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.DragEnded">
+            <summary>
+            Sürükleme bittiğinde tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.SnapPointReached">
+            <summary>
+            Snap noktasına ulaşıldığında tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Opened">
+            <summary>
+            Sheet tamamen açıldığında tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Closed">
+            <summary>
+            Sheet tamamen kapandığında tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.PeekContentTapped">
+            <summary>
+            Peek içeriğine tıklandığında tetiklenir
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Show(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            Bottom Sheet'i belirtilen duruma getirir
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Hide">
+            <summary>
+            Bottom Sheet'i kapatır
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.Toggle(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            Bottom Sheet'i açar/kapatır
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.AnimateToPosition(System.Double)">
+            <summary>
+            Belirtilen oran değerine animasyonlu geçiş yapar
+            </summary>
+            <param name="ratio">0-1 arası oran</param>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToTopAsync">
+            <summary>
+            İçeriği en üste scroll eder
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToBottomAsync">
+            <summary>
+            İçeriği en alta scroll eder
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ScrollToElementAsync(Microsoft.Maui.Controls.Element,Microsoft.Maui.Controls.ScrollToPosition)">
+            <summary>
+            Belirtilen elemana scroll eder
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.LockGesture">
+            <summary>
+            Sürüklemeyi geçici olarak kilitler
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.UnlockGesture">
+            <summary>
+            Sürükleme kilidini açar
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.AddSnapPoint(System.Double)">
+            <summary>
+            Snap point ekler
+            </summary>
+            <param name="ratio">0-1 arası oran</param>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Controls.BottomSheetView.ClearSnapPoints">
+            <summary>
+            Tüm snap pointleri temizler
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState">
+            <summary>
+            Bottom Sheet'in açılma durumlarını tanımlar
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Hidden">
+            <summary>
+            Bottom Sheet tamamen kapalı (görünmez)
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Collapsed">
+            <summary>
+            Bottom Sheet minimum seviyede açık (sadece handle görünür veya küçük bir kısım)
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.HalfExpanded">
+            <summary>
+            Bottom Sheet yarı açık (ekranın yaklaşık yarısı)
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.BottomSheetState.Expanded">
+            <summary>
+            Bottom Sheet tam açık (ekranın büyük kısmını kaplar)
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.GestureDirection">
+            <summary>
+            Sürükleme yönünü belirtir
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.Up">
+            <summary>
+            Yukarı doğru sürükleme
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.Down">
+            <summary>
+            Aşağı doğru sürükleme
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureDirection.None">
+            <summary>
+            Hareket yok
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode">
+            <summary>
+            Sürükleme kilidi modları
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.None">
+            <summary>
+            Kilit yok, serbestçe sürüklenebilir
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.LockDown">
+            <summary>
+            Sadece yukarı sürüklenebilir
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.LockUp">
+            <summary>
+            Sadece aşağı sürüklenebilir
+            </summary>
+        </member>
+        <member name="F:FeritBulut.Maui.BottomSheet.Enums.GestureLockMode.Locked">
+            <summary>
+            Tamamen kilitli, sürüklenemez
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs">
+            <summary>
+            Sürükleme olayları için argümanlar
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.TranslationY">
+            <summary>
+            Mevcut Y pozisyonu
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.Direction">
+            <summary>
+            Sürükleme yönü
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.Velocity">
+            <summary>
+            Sürükleme hızı (velocity)
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.BottomSheetDragEventArgs.CurrentRatio">
+            <summary>
+            Mevcut yükseklik oranı (0-1)
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs">
+            <summary>
+            Snap noktasına ulaşıldığında tetiklenen event için argümanlar
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs.SnapPoint">
+            <summary>
+            Ulaşılan snap noktası değeri
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.SnapPointReachedEventArgs.SnapPointIndex">
+            <summary>
+            Snap noktasının index'i
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs">
+            <summary>
+            Bottom Sheet durumu değiştiğinde tetiklenen event için argümanlar
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.OldState">
+            <summary>
+            Önceki durum
+            </summary>
+        </member>
+        <member name="P:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.NewState">
+            <summary>
+            Yeni (şu anki) durum
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.EventArgs.StateChangedEventArgs.#ctor(FeritBulut.Maui.BottomSheet.Enums.BottomSheetState,FeritBulut.Maui.BottomSheet.Enums.BottomSheetState)">
+            <summary>
+            StateChangedEventArgs constructor
+            </summary>
+            <param name="oldState">Önceki durum</param>
+            <param name="newState">Yeni durum</param>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Extensions.BottomSheetExtensions">
+            <summary>
+            Bottom Sheet kütüphanesini uygulamaya eklemek için extension metodlar
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Extensions.BottomSheetExtensions.UseBottomSheet(Microsoft.Maui.Hosting.MauiAppBuilder)">
+            <summary>
+            Bottom Sheet kontrollerini uygulamaya ekler
+            </summary>
+            <param name="builder">MauiAppBuilder instance</param>
+            <returns>MauiAppBuilder</returns>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper">
+            <summary>
+            Klavye olaylarını yönetir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.KeyboardShown">
+            <summary>
+            Klavye göründüğünde tetiklenir
+            </summary>
+        </member>
+        <member name="E:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.KeyboardHidden">
+            <summary>
+            Klavye gizlendiğinde tetiklenir
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.Initialize">
+            <summary>
+            Klavye helper'ı initialize eder
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.KeyboardHelper.GetKeyboardHeight">
+            <summary>
+            Mevcut klavye yüksekliğini döndürür
+            </summary>
+        </member>
+        <member name="T:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection">
+            <summary>
+            Snap noktalarını yöneten koleksiyon
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindNearest(System.Double)">
+            <summary>
+            Verilen değere en yakın snap noktasını bulur
+            </summary>
+            <param name="value">Mevcut değer (0-1 arası oran)</param>
+            <returns>En yakın snap noktası</returns>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindNext(System.Double)">
+            <summary>
+            Verilen değerden bir üstteki snap noktasını bulur
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.FindPrevious(System.Double)">
+            <summary>
+            Verilen değerden bir alttaki snap noktasını bulur
+            </summary>
+        </member>
+        <member name="M:FeritBulut.Maui.BottomSheet.Helpers.SnapPointCollection.IndexOfNearest(System.Double)">
+            <summary>
+            Snap noktasının index'ini bulur
+            </summary>
+        </member>
+    </members>
+</doc>

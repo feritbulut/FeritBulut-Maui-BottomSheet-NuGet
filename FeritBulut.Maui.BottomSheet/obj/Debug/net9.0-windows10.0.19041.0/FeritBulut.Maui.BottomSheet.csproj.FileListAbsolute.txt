@@ -1,0 +1,17 @@
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.deps.json
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.dll
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.pdb
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.xml
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.dll
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.Projection.dll
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.csproj.AssemblyReference.cache
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.AssemblyInfoInputs.cache
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.AssemblyInfo.cs
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.csproj.CoreCompileInputs.cache
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBul.416D0C10.Up2Date
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.dll
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\refint\FeritBulut.Maui.BottomSheet.dll
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.xml
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\FeritBulut.Maui.BottomSheet.pdb
+C:\Users\Arif\Desktop\FeritBulut.Maui.BottomSheet\FeritBulut.Maui.BottomSheet\obj\Debug\net9.0-windows10.0.19041.0\ref\FeritBulut.Maui.BottomSheet.dll
