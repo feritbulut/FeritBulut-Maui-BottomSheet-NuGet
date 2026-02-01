@@ -1,0 +1,51 @@
+## .NET MAUI / Xamarin
+*.user
+*.userosscache
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.ds_store
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.csproj.user
+*.sln.docstates
+*.sln.iml
+.idea/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## macOS
+.DS_Store
+*.DS_Store
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Rider
+.idea/
+
+## VS Code
+.vscode/
