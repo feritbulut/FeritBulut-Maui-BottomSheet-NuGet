@@ -1,0 +1,11 @@
+
+**/bin/** linguist-vendored
+**/obj/** linguist-vendored
+**/packages/** linguist-vendored
+**/.vs/** linguist-vendored
+
+*.Designer.cs linguist-generated
+*.g.cs linguist-generated
+*.g.i.cs linguist-generated
+
+*.cs linguist-language=C#
