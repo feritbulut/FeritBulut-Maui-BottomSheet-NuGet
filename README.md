@@ -24,6 +24,18 @@ Professional, highly customizable Bottom Sheet control for .NET MAUI application
 | 📱 **Cross-platform** | Android, iOS, MacCatalyst, Windows |
 
 ---
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/98e24f21-d295-4a62-a99d-c61090b4bd91" width="150" />
+  <img src="https://github.com/user-attachments/assets/8ed8d4f3-8fc8-475e-a2af-71718bb4789d" width="150" />
+  <img src="https://github.com/user-attachments/assets/d1df1ee3-88eb-4231-ada0-e23bbb6ee21c" width="150" />
+  <img src="https://github.com/user-attachments/assets/ee458e5b-736d-407d-b03a-6879f67f6353" width="150" />
+  <img src="https://github.com/user-attachments/assets/495d19f4-efef-466c-bca3-38b28f44719f" width="150" />
+  <img src="https://github.com/user-attachments/assets/bfcdae1d-1a15-4786-838a-fc9faa928a87" width="150" />
+</p>
+
+
+
+---
 
 ## 📦 Installation
 
